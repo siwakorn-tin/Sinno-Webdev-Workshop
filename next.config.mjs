@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: { remotePatterns: [{ hostname: "statusneo.com" }] },
+};
 
 export default nextConfig;
