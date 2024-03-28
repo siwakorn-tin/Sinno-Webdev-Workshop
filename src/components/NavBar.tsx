@@ -3,24 +3,20 @@ import React from "react";
 
 function NavBar() {
   const menu = [
-    { name: "Home", link: "/home" },
+    { name: "Home", link: "/" },
     { name: "Experience", link: "/experience" },
     { name: "Blog", link: "/blog" },
   ];
   return (
-    <nav>
-      <div className="flex justify-start pt-28">
-        <div className="flex">
+        <nav className="flex pb-10">
           {menu.map(item => (
-            <div className="px-2" key={item.name}>
+            <div className="mr-4" key={item.name}>
               <Link href={item.link}>
              {item.name}
               </Link>
             </div>
           ))}
-        </div>
-      </div>
-  </nav>
+        </nav>
   );
 }
 
