@@ -5,7 +5,7 @@ interface Props {
 }
 
 const HeadComponent: React.FC<Props> = (Props) => {
-  return <h1 className="text-xl font-bold mt-2">{Props.text}</h1>;
+  return <h1 className="text-2xl font-bold mt-2">{Props.text}</h1>;
 };
 
 // const Head: React.FC<Props> = ({text}) => {
